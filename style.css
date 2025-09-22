@@ -1,0 +1,175 @@
+
+/*adding styles to the heading section*/
+#heading{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to right, #2203c1, rgb(156, 0, 156));
+    border: 4px solid #333;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+/*styles the h1 tag within the heading section*/
+h1{
+    text-decoration: underline;
+    color: white;
+    font-size: 40px;
+}
+/*styles the paragraph within the heading section*/
+#heading p{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*this adds styles to the navigation*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  display: flex; /*this makes the navigation bar display horizontally*/
+  justify-content: space-evenly;
+  background-color: #333; 
+}
+
+/*this section adds styles to the links within the navigation bar*/
+li a{
+    text-decoration: none;/*takes away the default underline for links*/
+    color: white; /*this changes the link from the normal blue color to white*/
+
+}
+
+/*this is to add effects over a specific section once it is hovered over with the mouse*/
+#nav-bar li:hover{
+    a{
+        font-size: 30px; 
+    }
+}
+
+/*this sizes the img in your boxes*/
+.game-box img{
+    width: 100px;
+    height: 145px;
+    object-fit: cover; /*this takes away the stretched look in the photo*/
+    border-radius: 6px;
+    float: left;
+    margin-right: 10px;
+    padding-top: -6px;
+}
+
+/*this sections adds a border to your box*/
+.game-box{
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 30px;
+    background-color: rgb(152, 173, 192);
+    box-shadow: 7px 7px 20px;
+}
+
+/*this adds effects to the boxes when they're hovered over with the mouse*/
+.game-box:hover{
+    background: linear-gradient(to right, #b7f8f9, #f09da1);
+    p{
+        color: black;
+    }
+    .price{
+        color: black;
+        background: linear-gradient(to right, #907aff, rgb(245, 126, 245));
+    }
+    .rating{
+        color: black;
+        background: linear-gradient(to right, #907aff, rgb(245, 126, 245))
+    }
+
+}
+
+/*this adds a little space between the first box and the second box*/
+#action-games{
+    margin-bottom: 3px;
+}
+
+/*this adds a backgroud color to the webpage*/
+body{
+    background: linear-gradient(to left, #ff4949, #ef37ef)
+}
+
+/*this section styles the <h2> above the boxes*/
+h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+/*this adds styling to the heading tag inside the boxes*/
+.game-box h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px; 
+}
+
+/*this styles the paragraph inside the boxes*/
+.game-box p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #ffd8d8;
+    margin-top: 0;
+}
+
+/*this adds styles to the price bubble within the boxes*/
+.price{
+    padding-right: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: black solid 2px;
+    padding: 5px;
+    border-radius: 20px;
+    color: #ffd8d8;
+    margin-right: 10px;
+    background: linear-gradient(to right, #694bff, rgb(255, 53, 255))
+}
+
+/*this adds styles to the rating bubble within the box*/
+.rating{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border: black solid 2px;
+    padding: 5px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #694bff, rgb(255, 53, 255));
+    color:#ffd8d8 ;
+
+}
+
+@media(max-width:600px){
+    .game-box{
+        margin: 0;
+        padding: 10px;
+    }
+
+    .game-box h3{
+        font-size: 20px;
+    }
+
+    .game-box p{
+        font-size: 15px;
+    }
+
+    .price{
+        font-size: 15px;
+    }
+
+    .rating{
+        font-size: 15px;
+    }
+
+    #heading p{
+        display: none; /*this removes the introductory text within the heading id*/
+    }
+
+}
